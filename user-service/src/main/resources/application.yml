@@ -1,0 +1,13 @@
+server:
+  port: 9001
+
+spring:
+  application:
+    name: user-service
+
+eureka:
+  client:
+    register-with-eureka: true # Eureka 등록 가능
+    fetch-registry: true # 외부에서 검색가능
+    service-url:
+      defaultZone: http://127.0.0.1:9000/eureka # 서버가 가지고 있을 위치 값 등록

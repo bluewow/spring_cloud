@@ -1,0 +1,12 @@
+server:
+    port: 9000
+
+spring:
+    application:
+        name: discoveryservice
+
+# eureka server 구동했는데 client 설정이 필요한 이유는 기본적으로 client 역활이 on 되기 떄문에 false 처리해준다
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
